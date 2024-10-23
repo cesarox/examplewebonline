@@ -1,0 +1,122 @@
+form {
+    width: 100%;
+    max-width: 500px;
+    background-color:  #444;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+margin-inline: auto;
+}
+div#formulario{
+    margin-top: 50px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color:  white;
+    color: #333;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color:white;
+    outline: none;
+    box-shadow: 0 0 8px rgba(17, 17, 17, 0.5);
+}
+
+select {
+    background-color: white;
+}
+
+option {
+    color: white;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    color: white;
+    background-color: #333;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #333;
+    font-style: italic;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: white;
+    
+}
+nav {
+    background-color: #444; /* Amarillo claro */
+    text-align: center;
+    padding: 15px;
+    margin-top: -20px;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333; /* Mismo verde suave que el header */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+footer p {
+    margin-top: 10px;
+    color: white;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    position: relative; 
+    padding: 10px;
+   
+    display: flex;
+    text-align: center;
+    
+}
+.img-logo {
+    max-width: 300px; /* Ajusta el tamaño de la imagen */
+    height: auto; 
+}

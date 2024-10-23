@@ -1,0 +1,161 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; 
+    padding: 10px;
+   
+    display: flex;
+    text-align: center;
+    
+}
+.img-logo {
+    max-width: 300px; 
+    height: auto; 
+}
+header h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+}
+
+nav {
+    text-align: center;
+    background-color: #444;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.seccion {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+h2 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+
+.autos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.auto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.auto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #03d4f0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #03f0b5;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 100px;
+}
+
+
+
+/* Estilos para pantallas grandes (desktops) */
+@media (min-width: 1024px) {
+    .autos {
+        justify-content: space-between;
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    .autos {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .auto {
+        width: 45%; 
+    }
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    nav a {
+        display: block; 
+        margin: 10px 0;
+    }
+
+    .autos {
+        flex-direction: column;
+    }
+
+    .auto {
+        width: 90%; /* Ocupan casi todo el ancho de la pantalla */
+        margin-bottom: 20px;
+    }
+
+    .boton {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    header, footer {
+        padding: 20px;
+    }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
